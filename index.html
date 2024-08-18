@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70d1331392.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <h1>Tea-House</h1>
+<body class="font-manrope">
+    <main class="max-w-[90%] lg:max-w-[80%] mx-auto">
+    <!-- banner section  -->
+     <section class="my-20 gap-32 lg:flex">
+        <!-- text content  -->
+        <div>
+            <h1 class="text-5xl font-bold lg:text-7xl text-[#1C1C1C]">It's good <br> tea time at The <br> Tea House</h1>
+            <p class="text-[#777777] my-5 lg:my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="bg-gradient-to-r from-orange-500 to-red-600 px-4 py-3 rounded-lg text-white">Explore More<i class="fa-solid fa-arrow-right ml-2 -rotate-45 text-lg"></i></button>
+        </div>
+        <!-- image content  -->
+         <div class="relative">
+            <img src="images/banner.png" alt="">
+            <div class="absolute bottom-4 left-10 flex items-center px-7 py-5 rounded-lg shadow-xl bg-white">
+                <div><i class="fa-solid fa-star text-3xl text-amber-400 mr-3"></i></div>
+                <div>
+                    <h1 class="font-bold text-3xl">5.00</h1>
+                    <p class="text-stone-500 font-semibold">Trust Pilot Ratings</p>
+                </div>
+            </div>
+         </div>
+     </section>
+
+     <h1 class="text-lg pt-5 lg:text-center lg:font-bold lg:m-8 lg:text-3xl">hello</h1>
+
+    </main>
 </body>
 </html>
